@@ -1,1 +1,67 @@
 /* Your styles can go here. */
+
+#header{
+    background-color: #ffc;
+    font-family: 'Catamaran', sans-serif;
+    color: #404040;
+    padding: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.intro {
+    padding-top: 1em;
+    border: 1px solid #ccc;
+    font-family: 'Catamaran';
+    font-style: italic;
+    text-align: center;
+}
+
+label, option {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.form-group {
+    padding: 1em;}
+
+.form-control {
+    background-color: #ffc;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+    background-color: #666;
+}
+ 
+.btn-primary {
+    background: #404040;
+    color: #ffc;
+    margin-left: 1em;
+}
+
+.btn:hover {
+    background: #666666;
+}
+
+#field-lname{
+    font-weight: bold;
+}
+
+#btn-ctr{
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.no-border {
+    border: none;
+}

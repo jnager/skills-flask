@@ -1,11 +1,18 @@
-<!doctype html>
-<html>
-<head>
-    <title>Application Response</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-<!-- fill this in -->
+{% block title %}Application Response{% endblock %}
 
-</body>
-</html>
+{% block header %}Thanks for your application!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="intro no-border">
+        <p>Thank you, {% if firstname == '' %}Ms.{% endif %}{{ firstname }} {{ lastname }}, for applying to be a {{ role }}. Your minimum salary requirement is {{ "${0:,}".format(salaryreq) }}.</p>
+    </div>
+</div>
+<div class="container">
+    <a class="center-block btn btn-primary" href="/" role="button" id="btn-ctr">Return to Home</a>
+</div>
+
+{% endblock %}

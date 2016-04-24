@@ -1,11 +1,17 @@
 <!doctype html>
 <head>
-    <title>{% block title %}Skills-HTML-CSS{% endblock %}</title>
+    <title>{% block title %}Skills-Flask{% endblock %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="./static/styles.css">
 
 </head>
 <body>
+    <div class="container-fluid" id="header">
+        <div class="row">
+            <h1>{% block header %}HEADER HERE{% endblock %}</h1>
+        </div>
+    </div>
+
 {% block body %}
 
 BODY CONTENT HERE
